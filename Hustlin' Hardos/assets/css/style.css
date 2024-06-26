@@ -1,0 +1,673 @@
+@import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;400;500;600;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none !important;
+    box-sizing: border-box;
+    text-decoration: none !important;
+}
+
+body {
+    background-image: url(../images/png/bgc_dots.png), url(../images/png/bgc_ylw.png);
+    background-color: #fff;
+
+}
+
+@font-face {
+    font-family: 'steelfish';
+    src: url(../fonts/steelfish\ rg.otf);
+}
+
+.ff_steela {
+    font-family: 'steelfish';
+}
+
+:root {
+    /* ---font-size--- */
+    --fs_xsm: 14px;
+    --fs_lxsm: 16px;
+    --fs_sm: 18px;
+    --fs_lsm: 24px;
+    --fs_md: 35px;
+    --fs_lmd: 60px;
+    --fs_lg: 80px;
+    --fs_xl: 157px;
+
+    /* ---font-color---- */
+    --clr_light: rgba(255, 255, 255, 1);
+    --clr_dark: rgba(0, 0, 0, 1);
+    --clr_danger: rgba(255, 19, 0, 1);
+    --clr_plant: rgba(0, 161, 6, 1);
+    --clr_ash: rgba(112, 103, 95, 1);
+    --clr_danger_0: rgba(255, 0, 0, 1);
+    --clr_sun: rgba(255, 214, 0, 1);
+
+    /* ---bgc-- */
+    --bgc_sun: rgba(255, 214, 0, 1);
+    --bgc_light: rgba(255, 255, 255, 1);
+    --bgc_dark: rgba(0, 0, 0, 1);
+
+
+    /* ---font-family--- */
+    --ff_noto: 'Noto Serif',
+        serif;
+    --ff_moderno: 'steelfish';
+    --ff_alegreya: 'Alegreya SC',
+        serif;
+
+}
+
+.ff_moderno {
+    font-family: var(--ff_moderno);
+}
+
+.ff_alegreya {
+    font-family: var(--ff_alegreya);
+}
+
+.ff_noto {
+    font-family: var(--ff_noto);
+}
+
+.bgc_dark {
+    background-color: var(--bgc_dark);
+}
+
+.bgc_light {
+    background-color: var(--bgc_light);
+}
+
+.bgc_sun {
+    background-color: var(--bgc_sun);
+}
+
+.clr_dark {
+    color: var(--clr_dark);
+}
+
+.clr_sun {
+    color: var(--clr_sun);
+}
+
+.clr_danger {
+    color: var(--clr_danger);
+}
+
+.clr_plant {
+    color: var(--clr_plant);
+}
+
+.clr_ash {
+    color: var(--clr_ash);
+}
+
+.clr_danger_0 {
+    color: var(--clr_danger_0);
+}
+
+.clr_light {
+    color: var(--clr_light);
+}
+
+.fs_lxsm {
+    font-size: var(--fs_lxsm);
+}
+
+.fs_sm {
+    font-size: var(--fs_sm);
+}
+
+.fs_lsm {
+    font-size: var(--fs_lsm);
+}
+
+.fs_md {
+    font-size: var(--fs_md);
+}
+
+.fs_lmd {
+    font-size: var(--fs_lmd);
+}
+
+.fs_lg {
+    font-size: var(--fs_lg);
+}
+
+.fs_xl {
+    font-size: var(--fs_xl);
+}
+
+.fs_xsm {
+    font-size: var(--fs_xsm);
+}
+
+.fw_400 {
+    font-weight: 400;
+}
+
+.fw_300 {
+    font-weight: 300;
+}
+
+.fw_600 {
+    font-weight: 600;
+}
+
+.fw_900 {
+    font-weight: 900;
+}
+
+.marq_border {
+    border: 1px solid var(--clr_sun);
+    border-radius: 5px;
+    padding: 3px 4px;
+    display: inline-block;
+}
+
+.marq_border_red {
+    border: 1px solid var(--clr_danger);
+    border-radius: 5px;
+    padding: 3px 4px;
+    display: inline-block;
+}
+
+.connect_btn {
+    font-size: var(--fs_xsm);
+    color: var(--clr_dark);
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: 'Noto Serif';
+    background-color: var(--bgc_sun);
+    border: 2px solid var(--clr_dark);
+    padding: 12px 16px;
+    display: inline-block;
+}
+
+.connect_btn:hover {
+    background-color: var(--clr_dark);
+    border: 2px solid var(--clr_sun);
+    color: var(--clr_sun);
+}
+
+.border_end_sml {
+    border-right: 2px solid black;
+}
+
+.z_99 {
+    z-index: 99;
+}
+
+.nav_items {
+    color: var(--clr_dark);
+    font-size: var(--fs_lxsm);
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
+
+.nav_items:hover {
+    color: var(--clr_danger);
+
+}
+
+
+
+.w_20 {
+    width: 20%;
+}
+
+.txt_shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.w_90 {
+    width: 90%;
+}
+
+
+.read_btn {
+    font-size: var(--fs_lxsm);
+    font-weight: 400;
+    color: var(--clr_dark);
+}
+
+.read_btn:hover {
+    color: rgb(62, 152, 188);
+}
+
+.cursor_pointer {
+    cursor: pointer;
+}
+
+.slick-arrow.slick-hidden {
+    display: block;
+}
+
+.border_2px {
+    border: 2px solid var(--clr_dark);
+}
+
+
+.roadmap_line::after {
+    content: "";
+    position: absolute;
+    /* left: 100%; */
+    width: 2px;
+    height: 95%;
+    background-color: black;
+    left: 48px;
+}
+
+.fixed_nav {
+    top: 45px;
+    background-image: url(../images/png/bgc_dots.png), url(../images/png/bgc_ylw.png);
+    background-color: #fff;
+
+}
+
+.road_img_pos1 {
+    position: absolute;
+    left: -29.5px;
+}
+
+.road_img_pos2 {
+    left: -29.5px;
+    position: absolute;
+
+}
+
+.arrow_sign {
+    /* --- arrow_size=48px, -14px (explained on xl screen) =34px(left) --- */
+    left: 34px;
+    bottom: 3px;
+    width: 30px;
+    height: 30px;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    transform: rotate(225deg);
+}
+
+.no_scroll {
+    overflow: hidden !important;
+
+}
+
+.sm_hover {
+    transition: 1s;
+}
+
+.sm_hover:hover {
+    transform: translateY(-10px);
+}
+
+.team_bgc {
+    background: linear-gradient(0deg, #D1C9C2 0%, #D1C9C2 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+    background-blend-mode: color, normal;
+
+}
+
+.slick-slide img {
+    display: inline-block;
+}
+
+.accordion {
+    --bs-accordion-color: ;
+    --bs-accordion-bg: ;
+    --bs-accordion-active-bg: ;
+    --bs-accordion-border-width: ;
+    --bs-accordion-border-color: ;
+    --bs-accordion-border-radius: ;
+    --bs-accordion-inner-border-radius: 0px;
+    --bs-accordion-btn-focus-border-color: ;
+    --bs-accordion-btn-focus-box-shadow: ;
+    --bs-accordion-btn-padding-x: 1rem;
+    --bs-accordion-btn-padding-y: 1rem;
+    --bs-accordion-body-padding-x: 1rem;
+    --bs-accordion-body-padding-y: 1rem;
+
+    --bs-accordion-btn-icon: url(../images/svg/plus.svg);
+    --bs-accordion-btn-active-icon: url(../images/svg/minus.svg);
+    --bs-accordion-btn-icon-transform: rotate(-180deg);
+
+    --bs-accordion-transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, ;
+
+}
+
+.accordion-button {
+    padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+}
+
+
+.accordion-button::after {
+    background-image: var(--bs-accordion-btn-icon);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: var(--bs-accordion-btn-active-icon);
+    transform: var(--bs-accordion-btn-icon-transform);
+}
+
+
+
+.w_80 {
+    width: 80%;
+}
+
+.border_bottom {
+    border-bottom: 2px solid var(--clr_dark);
+}
+
+
+
+.roadmap_line::after {
+    content: "";
+    position: absolute;
+    /* left: 100%; */
+    width: 2px;
+    height: 100%;
+    background-color: black;
+    left: calc(100%, - 1);
+}
+
+.menu_bar {
+    width: 32px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu_bar span {
+    display: block;
+    height: 2px;
+    background-color: black;
+    transition: .5s;
+}
+
+.ham_click span:nth-child(1) {
+    transform: translate(0px, 8px) rotate(40deg);
+}
+
+.ham_click span:nth-child(2) {
+    opacity: 0;
+}
+
+.ham_click span:nth-child(3) {
+    transform: translate(0px, -10px) rotate(-40deg);
+}
+
+
+
+@media (max-width:576px) {
+    :root {
+        /* ---font-size--- */
+        --fs_xsm: 14px;
+        --fs_lxsm: 13px;
+        --fs_sm: 14px;
+        --fs_lsm: 16px;
+        --fs_md: 24px;
+        --fs_lmd: 22px;
+        --fs_lg: 28px;
+        --fs_xl: 58px;
+    }
+
+    .set_ham {
+
+        height: calc(100vh - 91px) !important;
+
+    }
+
+    .team_bgc {
+        padding: 20px 25px;
+        height: 300px;
+    }
+
+
+
+    .border_t_b {
+        border-top: 2px solid var(--clr_dark);
+        border-bottom: 2px solid var(--clr_dark);
+    }
+
+    .border_bottom {
+        border-bottom: 2px solid var(--clr_dark);
+    }
+}
+
+
+
+@media (min-width:576px) {
+    :root {
+        /* ---font-size--- */
+        --fs_xsm: 14px;
+        --fs_lxsm: 14px;
+        --fs_sm: 18px;
+        --fs_lsm: 24px;
+        --fs_md: 30px;
+        --fs_lmd: 32px;
+        --fs_lg: 40px;
+        --fs_xl: 105px;
+    }
+
+
+
+    .border_t_b {
+        border-top: 2px solid var(--clr_dark);
+        border-bottom: 2px solid var(--clr_dark);
+    }
+
+    .border_start_slider {
+        border-left: 2px solid black;
+    }
+
+    .border_end_slider {
+        border-right: 2px solid black;
+    }
+
+
+    .team_bgc {
+        padding: 20px 25px;
+        height: 260px;
+    }
+}
+
+@media (min-width:768px) {
+    :root {
+        /* ---font-size--- */
+        --fs_xsm: 14px;
+        --fs_lxsm: 16px;
+        --fs_sm: 18px;
+        --fs_lsm: 24px;
+        --fs_md: 35px;
+        --fs_lmd: 44px;
+        --fs_lg: 60px;
+        --fs_xl: 136px;
+    }
+
+
+
+    .team_bgc {
+        padding: 20px 25px;
+        height: 300px;
+    }
+
+    .border_start {
+        border-left: 2px solid black;
+        height: 100%;
+    }
+
+    .border_end {
+        border-right: 2px solid black;
+        height: 100%;
+    }
+}
+
+@media (max-width:992px) {
+    .set_ham {
+        position: fixed;
+        left: -100%;
+        bottom: 0;
+        width: 100%;
+        height: calc(100vh - 105px);
+        background-color: #e4d2b4;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 2;
+        transition: 500ms;
+    }
+
+    .mob {
+        left: 0;
+    }
+
+    .hide {
+        left: -100% !important;
+    }
+
+
+
+}
+
+@media (min-width:992px) {
+    :root {
+        /* ---font-size--- */
+        --fs_xsm: 14px;
+        --fs_lxsm: 16px;
+        --fs_sm: 18px;
+        --fs_lsm: 24px;
+        --fs_md: 35px;
+        --fs_lmd: 60px;
+        --fs_lg: 80px;
+        --fs_xl: 157px;
+    }
+
+
+
+
+    .team_bgc {
+        padding: 30px 35px;
+        height: 350px;
+    }
+
+    .border_lg_start {
+        border-left: 2px solid black;
+        height: 100%;
+    }
+
+    .border_lg_end {
+        border-right: 2px solid black;
+        height: 100%;
+    }
+
+    .border_t_b_nav {
+        border-top: 2px solid var(--clr_dark);
+        border-bottom: 2px solid var(--clr_dark);
+    }
+
+    .border_lg_start {
+        border-left: 2px solid black;
+    }
+
+    .border_lg_end {
+        border-right: 2px solid black;
+    }
+
+    .border_end_lg_none {
+        border-right: none;
+    }
+}
+
+@media (min-width:1200px) {
+
+    :root {
+        /* ---font-size--- */
+        --fs_xsm: 14px;
+        --fs_lxsm: 16px;
+        --fs_sm: 18px;
+        --fs_lsm: 24px;
+        --fs_md: 35px;
+        --fs_lmd: 72px;
+        --fs_lg: 80px;
+        --fs_xl: 157px;
+    }
+
+
+    .w_88 {
+        width: 88%;
+    }
+
+    .w_50 {
+        width: 50%;
+    }
+
+
+
+    .border_t_b {
+        border-top: 2px solid var(--clr_dark);
+        border-bottom: 2px solid var(--clr_dark);
+    }
+
+
+
+
+
+
+    .roadmap_line::after {
+        content: "";
+        position: absolute;
+        left: 100%;
+        width: 2px;
+        height: 100%;
+        background-color: black;
+
+    }
+
+    .road_img_pos1 {
+        position: absolute;
+        /* right: calc(100% - 29.5px); */
+        left: -29.5px;
+        /* ---half of img size which is 59px (of above property left -29.5px) and (same goes for above right-calc) --- */
+    }
+
+    .road_img_pos2 {
+        position: absolute;
+        left: calc(100% - 29.5px);
+    }
+
+    .roadmap_pos {
+        right: -100%;
+    }
+
+    .ps_80 {
+        padding-left: 80px;
+    }
+
+    .pe_60 {
+        padding-right: 60px;
+    }
+
+    .team_bgc {
+        background: linear-gradient(0deg, #D1C9C2 0%, #D1C9C2 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+        background-blend-mode: color, normal;
+        padding: 40px 56px;
+        height: 350px;
+    }
+
+    .arrow_sign {
+        width: 30px;
+        height: 30px;
+        border-left: 2px solid black;
+        border-top: 2px solid black;
+        transform: rotate(225deg);
+        left: calc(100% - 14px);
+        bottom: 3px;
+    }
+}
